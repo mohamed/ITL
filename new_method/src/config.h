@@ -36,7 +36,7 @@ struct key_names {
     char daylight[KEY_NAME_LENGTH];
 };
 
-extern struct key_names valid_keys;
+extern const struct key_names valid_keys;
 
 /* Public Functions */
 

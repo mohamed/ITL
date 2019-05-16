@@ -23,7 +23,7 @@
 
 #include "defs.h"
 
-extern calc_method_t calc_methods [];
+extern const calc_method_t calc_methods [];
 
 /* Public functions */
 

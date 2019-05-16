@@ -1,6 +1,6 @@
 #include "prayer.h"
 
-calc_method_t calc_methods [] = {
+const calc_method_t calc_methods [] = {
  { MWL,  "Muslim World League (MWL)", ANGLE, 18, 17 },
  { ISNA, "Islamic Society of North America (ISNA)", ANGLE, 15, 15 },
  { EGAS, "Egyptian General Authority of Survey", ANGLE, 19.5, 17.5 },

@@ -1,7 +1,7 @@
 #include "config.h"
 
 /* List of valid key names in the config file */
-struct key_names valid_keys = {
+const struct key_names valid_keys = {
     "name",
     "latitude",
     "longitude",
@@ -13,7 +13,7 @@ struct key_names valid_keys = {
     "daylight"
 };
 
-extern calc_method_t calc_methods [];
+extern const calc_method_t calc_methods [];
 
 static void set_default_location(struct location *loc);
 

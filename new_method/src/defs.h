@@ -17,7 +17,7 @@
 
 /* Rounding method used for seconds */
 typedef enum { UP, DOWN, NEAREST } round_t;
-              
+
 /* Asr Method */
 typedef enum { SHAFII=0, HANAFI=1 } asr_method_t;
 
@@ -26,7 +26,7 @@ typedef enum { ANGLE, OFFSET } isha_flag_t;
 
 typedef enum { MWL=0, ISNA=1, EGAS=2, UMAQ=3, UIS=4 } method_id_t;
 
-/* Extreme Latitude Method 
+/* Extreme Latitude Method
  * TODO: extreme latitudes are still WIP
  */
 typedef enum { NONE=0,
