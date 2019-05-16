@@ -1,5 +1,5 @@
-#ifndef _DEFS_H_
-#define _DEFS_H_
+#ifndef DEFS_H_
+#define DEFS_H_
 
 #ifndef M_PI
 #define M_PI (3.141592653589793)

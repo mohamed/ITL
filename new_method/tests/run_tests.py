@@ -50,13 +50,13 @@ class TestPrayerNewMethod(unittest.TestCase):
                     shell=True)
             (output, errors) = p.communicate()
             self.assertEqual(p.returncode, 0)
-            self.assertEqual(errors, "")            
+            self.assertEqual(errors.decode("utf-8"), "")
             ref_times = list(json_data["times"])
             computed_times = list(json.loads(output)["times"])
             self.assertEqual(len(ref_times), len(computed_times))
             for i in range(len(computed_times)):
-                ref_x = ref_times[i].items()[0][1]
-                comp_x = computed_times[i].items()[0][1]
+                ref_x = list(ref_times[i].items())[0][1]
+                comp_x = list(computed_times[i].items())[0][1]
                 time_format = "%H:%M"
                 t_r = datetime.datetime.strptime(ref_x, time_format)
                 t_c = datetime.datetime.strptime(comp_x, time_format)

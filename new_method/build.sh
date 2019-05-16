@@ -7,6 +7,6 @@ rm -rf build
 mkdir build
 cd build
 cmake ..
-make -j
+cmake --build . -- VERBOSE=1
 cd ../tests
 python run_tests.py

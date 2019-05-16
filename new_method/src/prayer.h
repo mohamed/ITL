@@ -12,8 +12,8 @@
  still missing.
 */
 
-#ifndef _PRAYER_H_
-#define _PRAYER_H_
+#ifndef PRAYER_H_
+#define PRAYER_H_
 
 #include <stdio.h>
 #include <stdlib.h>
